@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {
+    font-family: "Banny";
+    src: url(/fonts/Banny-BoldRound.otf)
+}
+
+:root {
+    --main-copy: 'Open Sans', sans-serif;
+    --main-hl: "Banny";
+    --main-acc-color: #FFD600;
+    --main-hl-color: #fff;
+    --footer-ft-color: rgba(255, 255, 255, .5);
+    --footer-color: rgba(0, 0, 0, .9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--main-copy);
+    color: #000;
+}
+
+header {
+    background: url(/assets/img/header-bg-test.png) center / cover no-repeat;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: var(--main-hl-color);
+}
+
+.headerSect {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+#times p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#mainHL {
+    text-align: center;
+}
+
+h6 {
+    letter-spacing: .5rem;
+    text-align: center;
+}
+
+#teamH6 {
+    color: 
+}
+
+.headerSect article > p, #headerH6, h1, .fab{
+    color: var(--main-hl-color);
+}
+
+.fas {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.headerSect h1 {
+    font-size: 6rem;
+    font-family: var(--main-hl);
+}
+
+.iconContainer {
+    margin-bottom: 1rem;
+}
+
+.iconContainer, .iconContainerArrow{
+    border: 1px solid var(--main-hl-color);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainerArrow {
+    background: var(--main-hl-color);
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 12rem;
+    /* margin-left: -30px; */
+}
+
+#iconContainerFlex {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10rem; */ 
+    padding-bottom: 5rem;
+}
+
+.btnFlex {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 14rem;
+    padding: 1.25rem 0;
+    border-radius: 5px;
+}
+
+.btn:active, .btn:focus {
+    outline: none;
+}
+
+.yellow {
+    background: var(--main-acc-color);
+    border: none; 
+    color: var(--main-hl-color);
+}
+
+.white {
+    background: none;
+    border: 1px solid var(--main-hl-color);
+    color: var(--main-hl-color);
+}
+
+.aboutFlex {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.aboutFlex article {
+    width: 40%;
+    align-self: center;
+}
+.aboutFlex article h2 {
+    font-family: var(--main-hl);
+    font-size: 2.25rem;
+}
+
+.aboutFlex article p {
+    line-height: 1.5rem;
+}
+
+.hr {
+    border: 3px solid var(--main-acc-color);
+    border-radius: 50rem;
+    width: 10%;
+    margin: 1.5rem auto;
+}
+
+.aboutFlex article p:nth-of-type(1) {
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.aboutFlex article h2, .aboutFlex article p {
+    text-align: center;
+}
+
+.imgGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.imgGridImg {
+    grid-area: 1 / 1 / 5 / 4;
+    background: url(/assets/img/about-img.png) center / cover no-repeat;
+    min-height: 40rem;
+    min-width: 40rem;
+}
+
+.imgGridImgLeft {
+    grid-area: 1 / 2 / 5 / 5;
+    background: url(/assets/img/team-img.png) center / cover no-repeat;
+    min-height: 40rem;
+    min-width: 40rem;
+}
+
+
+.yellowBoxRight {
+    border: 1rem solid var(--main-acc-color);
+    border-radius: 1rem;
+    grid-area: 2 / 4 / 4 / 6;
+}
+
+.yellowBoxLeft {
+    border: 1rem solid var(--main-acc-color);
+    border-radius: 1rem;
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+footer p {
+    color: var(--footer-ft-color);
+    padding: 3rem 0;
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<header>
+    <nav>
+        <ul>
+            <% navData.forEach(nav=> { %>
+                <li>
+                    <a href="<%= nav.url %>">
+                        <%= nav.name %>
+                    </a>
+                    <img src="<%= nav.img %>" alt="">
+                </li>
+
+                <% }) %>
+        </ul>
+    </nav>
+
+    <section class="headerSect">
+        <article id="times">
+            <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+        </article>
+
+        <article id="mainHL">
+            <h6 id="headerH6">RESTAURANT</h6>
+            <h1>HUNGRY PEOPLE</h1>
+            <hr class="hr">
+
+            <div class="btnFlex">
+                <button class="btn yellow">BOOK TABLE</button>
+                <button class="btn white">EXPLORE</button>
+            </div>
+
+        </article>
+
+        <article class="icons">
+            <div class="iconContainer">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="iconContainer">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="iconContainer">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </article>
+    </section>
+
+    <div id="iconContainerFlex">
+        <div class="iconContainerArrow">
+            <i class="fas fa-angle-down"></i>
+        </div>
+    </div>
+
+</header>

@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "render": "index"
+    },
+    {
+        "name": "About",
+        "url": "/about",
+        "render": "about"
+    },
+    {
+        "name": "Team",
+        "url": "/team",
+        "render": "team"
+    },
+    {
+        "name": "Booking",
+        "url": "/booking",
+        "render": "booking"
+    },
+    {
+        "img": "assets/img/logo.svg"
+    },
+    {
+        "name": "Menu",
+        "url": "/menu",
+        "render": "menu"
+    },
+    {
+        "name": "Gallery",
+        "url": "/gallery",
+        "render": "gallery"
+    },
+    {
+        "name": "Events",
+        "url": "/events",
+        "render": "events"
+    }, 
+    {
+        "name": "Contact",
+        "url": "/contact",
+        "render": "contact"
+    }
+]
