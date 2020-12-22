@@ -24,6 +24,7 @@
 }
 
 /* general styles */
+
 h1, h2 {
     font-family: var(--main-hl);
 }
@@ -52,12 +53,13 @@ h2, h6, p {
 .hr {
     border: 3px solid var(--main-acc-color);
     border-radius: 50rem;
-    width: 10%;
+    width: 5rem;
     margin: 1.5rem auto;
     text-align: center;
 }
 
 /* Header Styles */
+
 header {
     background: url(/assets/img/header-bg.png) center / cover no-repeat;
 }
@@ -117,7 +119,7 @@ nav ul li a {
 
 .yellow {
     background: var(--main-acc-color);
-    border: none; 
+    border: none;
     color: var(--main-hl-color);
 }
 
@@ -137,7 +139,7 @@ nav ul li a {
     padding-bottom: 5rem;
 }
 
-.iconContainer, .iconContainerArrow{
+.iconContainer, .iconContainerArrow {
     border: 1px solid var(--main-hl-color);
     padding: 1rem;
     border-radius: 2rem;
@@ -200,7 +202,7 @@ nav ul li a {
     background: url(/assets/img/about-img.png) center / cover no-repeat;
 }
 
-.yellowBoxRight , .yellowBoxLeft {
+.yellowBoxRight, .yellowBoxLeft {
     border: 1rem solid var(--main-acc-color);
     border-radius: 1rem;
 }
@@ -250,14 +252,31 @@ nav ul li a {
 .bookingForm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-.bookingBtn{
-    border: 1px solid red;
+.bookingBtn {
     grid-column-start: span 2;
 }
 
+input[type=text], input[type=number], select, textarea {
+    background: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    padding: 1.25rem;
+}
 
+::placeholder, select {
+    color: rgba(51, 51, 51, .5);
+}
+
+.formBtn {
+    background: var(--main-acc-color);
+    color: var(--main-hl-color);
+    border: none;
+    border-radius: 5px;
+    padding: 1.5rem 0;
+}
 
 /* Booking Styles done */
 
@@ -283,23 +302,89 @@ nav ul li a {
 
 /* Contact Styles */
 
-/* .contactSect h2, .contactSect p{
-    text-align: center;
+.contactSect {
+    margin: 5rem 0;
 }
 
+.contactGridParent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contacttGridItem1 {
+    border: 1px solid blue;
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+.contacttGridItem2 {
+    grid-area: 1 / 5 / 2 / 9;
+}
+
+.contacttGridItem3 {
+    grid-area: 1 / 9 / 2 / 13;
+}
+
+.contacttGridItem4 {
+    grid-area: 2 / 1 / 3 / 13;
+}
+
+/* 
+.contacttGridItem5 {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.contacttGridItem6 {
+    grid-area: 3 / 3 / 4 / 5;
+}
+
+.contacttGridItem7 {
+    grid-area: 3 / 5 / 4 / 7;
+} */
+
+.contacttGridItem8 {
+    grid-area: 3 / 7 / 4 / 13;
+}
+
+.contactFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: 3 / 1 / 4 / 7;
+}
+
+.fasYlw {
+    color: var(--main-acc-color);
+    margin-right: 1rem;
+}
+
+.contactImprint {
+    color: rgba(51, 51, 51, .5);
+    letter-spacing: 0;
+    font-size: 0.75rem;
+}
+
+.contactBGImg {
+    background: url(/assets/img/map.png) center / cover no-repeat;
+    min-height: 80vh;
+}
 /* Contact Styles done */
 
+/* 404 Styles */
 
-/* 404 Styles */ 
 #error404 {
     padding: 10rem 0;
     display: block;
     width: 50%;
     margin: 0 auto;
 }
+
 /* 404 Styles done */
 
 /* Footer Styles */
+
 footer {
     background-color: var(--footer-color);
 }
@@ -309,4 +394,5 @@ footer p {
     padding: 3rem 0;
     text-align: center;
 }
+
 /* Footer Styles done */
